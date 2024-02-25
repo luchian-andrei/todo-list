@@ -16,3 +16,7 @@
   align-items: center;
   margin: 20vh;
 }
+
+.completed {
+  text-decoration: line-through;
+}
