@@ -10,22 +10,18 @@ export default function TodoForm({ addTodo }) {
     setValue("");
   };
 
-  console.log(value);
-
   return (
-    <div className="TodoForm">
-      <form onSubmit={handleSubmit}>
-        <input
-          type="text"
-          id="form-input"
-          placeholder="Write your task ..."
-          onChange={(e) => setValue(e.target.value)}
-          value={value}
-        />
-        <button type="submit" id="form-button">
-          Add Note
-        </button>
-      </form>
-    </div>
+    <form className="TodoForm" onSubmit={handleSubmit}>
+      <input
+        type="text"
+        id="form-input"
+        placeholder="Write your task ..."
+        onChange={(e) => setValue(e.target.value)}
+        value={value}
+      />
+      <button type="submit" id="form-button">
+        Add Note
+      </button>
+    </form>
   );
 }
