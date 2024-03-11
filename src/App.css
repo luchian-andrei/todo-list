@@ -19,11 +19,10 @@ body {
 
 .App {
   width: 500px;
-  height: fit-content;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 20vh;
+  margin: 10vh;
   background-color: darkslateblue;
   border-radius: 15px 5px 15px 5px;
   padding: 20px;
@@ -46,7 +45,7 @@ body {
 }
 
 .TodoForm input {
-  width: 300px;
+  width: 60%;
   height: 60px;
   padding: 10px;
   border-radius: 10px;
@@ -64,7 +63,7 @@ body {
 }
 
 .TodoForm button {
-  width: 80px;
+  width: 30%;
   height: 60px;
   padding: 10px;
   border-radius: 10px;
@@ -120,4 +119,11 @@ body {
 
 .trash-icon:hover {
   color: red;
+}
+
+@media (max-width: 600px) {
+  .App {
+    width: 90vw;
+    margin: 5vh 0;
+  }
 }

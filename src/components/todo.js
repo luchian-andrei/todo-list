@@ -20,7 +20,7 @@ export default function Todo({ task, toggleComplete, deleteTodo }) {
           />
         )}
         <p
-          className={task.completed ? "completed" : "uncompleted"}
+          className={task.completed ? "task completed" : "task uncompleted"}
           onClick={() => toggleComplete(task.id)}
         >
           {task.task}
